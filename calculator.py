@@ -14,6 +14,7 @@ def square_root(a):
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
+
 def add(a, b):
     return a + b
 
@@ -31,7 +32,7 @@ def div(a,b):
 
 def log(a,b):
     if b < 1:
-        return ValueError
+        raise ValueError
     else:
         return math.log(a,b)
 
