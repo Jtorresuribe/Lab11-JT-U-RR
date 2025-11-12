@@ -24,12 +24,13 @@ def div(a,b):
 
 def log(a,b):
     if b < 1:
-        raise ValueError
+        return ValueError
     else:
-        return math/log(a,b)
+        return math.log(a,b)
+
+
 
 def exp(a,b):
     return a ** b
-
 
 
