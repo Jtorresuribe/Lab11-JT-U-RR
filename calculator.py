@@ -28,7 +28,6 @@ def log(a,b):
     else:
         return math.log(a,b)
 
-
 def exp(a,b):
     return a ** b
 
