@@ -35,12 +35,12 @@ def div(a,b):
         return b/a
 
 def logarithm(a,b):
-    if b >= 1:
-        return math.log(a, b)
+    if a < 1:
+        raise ZeroDivisionError
     elif b < 1:
         raise ValueError
-    elif a < 1:
-        raise ZeroDivisionError
+    elif b >= 1:
+        return math.log(a, b)
 
 
 def exp(a,b):
