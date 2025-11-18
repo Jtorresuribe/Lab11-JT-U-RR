@@ -24,14 +24,14 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul())
 
     def test_divide(self): # 3 assertions
-        self.assertAlmostEqual(div())
+        self.assertAlmostEqual(div(8, 2), 4)
     # ##########################
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
         # call division function inside, example:
         with self.assertRaises(ZeroDivisionError):
-            self.div(0, 5)
+            self.div(5, 0)
 
     def test_logarithm(self):
         # 3 assertions
@@ -48,7 +48,7 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            logarithm(0, 5)
+            logarithm(5, 0)
 
     def test_hypotenuse(self): # 3 assertions
         self.assertEqual(hypotenuse())
