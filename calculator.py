@@ -37,8 +37,10 @@ def div(a,b):
 def logarithm(a,b):
     if b >= 1:
         return math.log(a, b)
-    else:
+    elif b < 1:
         raise ValueError
+    else:
+        raise ZeroDivisionError
 
 
 def exp(a,b):
