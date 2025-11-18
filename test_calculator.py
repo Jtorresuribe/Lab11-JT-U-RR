@@ -21,10 +21,14 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
-        self.assertEqual(mul())
+        self.assertEqual(mul(1, 2), 2)
+        self.assertEqual(mul(3, 4), 12)
+        self.assertEqual(mul(2, 3), 6)
 
     def test_divide(self): # 3 assertions
         self.assertAlmostEqual(div(8, 2), 4)
+        self.assertAlmostEqual(div(12, 6), 2)
+        self.assertAlmostEqual(div(24, 8), 3)
     # ##########################
 
     ######## Partner 2
@@ -48,15 +52,19 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            logarithm(5, 0)
+            logarithm(0, 5)
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertEqual(hypotenuse())
+        self.assertEqual(hypotenuse(3, 4),5)
+        self.assertEqual(hypotenuse(6, 8), 10)
+        self.assertEqual(hypotenuse(5, 12), 13)
 
     def test_sqrt(self): # 3 assertions
-        with self.assertRaises(ValueError):
-           square_root(4)
-        self.assertEqual(square_root())
+        # with self.assertRaises(ValueError):
+        #    square_root(4)
+        self.assertEqual(square_root(4), 2)
+        self.assertEqual(square_root(9), 3)
+        self.assertEqual(square_root(16), 4)
 
     #     fill in code
     ##########################
