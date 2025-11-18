@@ -39,7 +39,7 @@ def logarithm(a,b):
         return math.log(a, b)
     elif b < 1:
         raise ValueError
-    else:
+    elif a < 1:
         raise ZeroDivisionError
 
 
