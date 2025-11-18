@@ -1,4 +1,6 @@
 # https://github.com/Jtorresuribe/Lab11-JT-U-RR.git
+# Partner 1 Joaquin Torres-Uribe
+# Partner 2 Reyhan Rahman
 import math
 
 
