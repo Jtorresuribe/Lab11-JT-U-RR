@@ -1,22 +1,23 @@
 # https://github.com/Jtorresuribe/Lab11-JT-U-RR.git
+# Partner 1 Joaquin Torres-Uribe
+# Partner 2 Reyhan Rahman
 import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
-
     def test_add(self): # 3 assertions
-        self.assertEqual(self.add(2,3),5)
-        self.assertEqual(self.add(5,3),8)
-        self.assertEqual(self.add(4,3),7)
+        self.assertEqual(add(2,3),5)
+        self.assertEqual(add(5,3),8)
+        self.assertEqual(add(4,3),7)
 
 
 
 
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(self.sub(2,3),5)
-        self.assertEqual(self.add(5,3),8)
-        self.assertEqual(self.add(4,3),7)
+        self.assertEqual(subtract(2,3),5)
+        self.assertEqual(add(5,3),8)
+        self.assertEqual(add(4,3),7)
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
@@ -34,20 +35,20 @@ class TestCalculator(unittest.TestCase):
 
     def test_logarithm(self):
         # 3 assertions
-        self.assertEqual(self.log(8,2),3)
-        self.assertEqual(self.log(4,2),2)
-        self.assertEqual(self.log(16,2),4)
+        self.assertEqual(logarithm(8,2),3)
+        self.assertEqual(logarithm(4,2),2)
+        self.assertEqual(logarithm(16,2),4)
 
     def test_log_invalid_base(self): # 1 assertion
         # use same technique from test_divide_by_zero
         with self.assertRaises(ValueError):
-            self.log(2,0)
+            logarithm(2,0)
 
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            log(0, 5)
+            logarithm(0, 5)
 
     def test_hypotenuse(self): # 3 assertions
         self.assertEqual(hypotenuse())
