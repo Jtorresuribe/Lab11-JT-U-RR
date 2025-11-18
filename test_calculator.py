@@ -53,7 +53,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):
-           square_root(NUM)
+           square_root(4)
         self.assertEqual(square_root())
 
     #     fill in code
